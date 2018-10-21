@@ -3,16 +3,16 @@ version: '3.3'
 services:
   db:
     ports: 
-      - "5432:5432"
+      - 5432:5432
     secrets:
-      - psql_user
-      - psql_password
+      - postgres_user
+      - postgres_password
     environment:
-      POSTGRES_USER_FILE: /run/secrets/psql_user
-      POSTGRES_PASSWORD_FILE: /run/secrets/psql_password
+      POSTGRES_USER_FILE: /run/secrets/postgres_user
+      POSTGRES_PASSWORD_FILE: /run/secrets/postgres_password
 
 secrets:
-   psql_user:
-     file: ./psql_fake_user
-   psql_password:
-     file: ./psql_fake_password
+   postgres_user:
+     file: ./postgres_fake_user
+   postgres_password:
+     file: ./postgres_fake_password
