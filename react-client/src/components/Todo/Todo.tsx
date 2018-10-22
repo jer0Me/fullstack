@@ -1,6 +1,6 @@
 import * as React from 'react';
-import styled from 'styled-components'
 import {ListGroupItem} from "reactstrap";
+import styled from 'styled-components'
 
 const StyledListGroupItem = styled(ListGroupItem)`
   :hover {
