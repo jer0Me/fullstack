@@ -1,13 +1,14 @@
 import * as React from 'react';
-import {ListGroupItem} from "reactstrap";
+import {ListGroupItem} from 'reactstrap';
 import styled from 'styled-components'
 
 const StyledListGroupItem = styled(ListGroupItem)`
   :hover {
-    background-color: #EEEEEE;
+    background-color: #eee;
     color: black;
   }
 `;
+
 
 const Todo = (props: any) => (
     <StyledListGroupItem>{props.children}</StyledListGroupItem>
