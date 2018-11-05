@@ -34,6 +34,9 @@ yarn-error.log
 testem.log
 /typings
 
+#storybook
+.cache
+
 # System Files
 .DS_Store
 Thumbs.db
